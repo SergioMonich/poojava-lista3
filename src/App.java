@@ -234,8 +234,15 @@ public class App {
         //=================================================================================================================================
         // EX 21 - Crie uma interface Conversor que converte Celsius para Fahrenheit e implemente-a na classe Temperatura. 
         //=================================================================================================================================
+        /*
+        Temperatura temp1 = new Temperatura(25);
+        Temperatura temp2 = new Temperatura(27);
+        Temperatura temp3 = new Temperatura(28.5f);
 
-
+        temp1.converte();
+        temp2.converte();
+        temp3.converte();
+        */
         //=================================================================================================================================
         // EX 22 - Crie uma interface Banco que retorna a taxa de juros atual e implemente-a na classe ContaPoupanca. 
         //=================================================================================================================================
