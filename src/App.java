@@ -82,28 +82,57 @@ public class App {
         //=================================================================================================================================
         // EX 6 - Crie uma interface Nadador e Corredor, implemente ambas na classe Triatleta. 
         //=================================================================================================================================
-
-
+        /*
+        Triatleta tri1 = new Triatleta();
+        tri1.correr();
+        tri1.nadar();
+        */
         //=================================================================================================================================
         // EX 7 - Crie uma interface Banco com métodos sacar(), depositar() e verSaldo(), e implemente-a na classe ContaCorrente. 
         //=================================================================================================================================
+        /*
+        ContaCorrente cc1 = new ContaCorrente(1234);
+        ContaCorrente cc2 = new ContaCorrente(5678);
+        ContaCorrente cc3 = new ContaCorrente(6543);
 
-
+        cc1.depositar();
+        cc2.sacar();
+        cc3.verSaldo();
+        */
         //=================================================================================================================================
         // EX 8 - Crie uma interface OperacoesMatematicas com os métodos somar(), subtrair(), multiplicar() e dividir(), e implemente-a na classe Calculadora. 
         //=================================================================================================================================
+        /*
+        Calculadora calc = new Calculadora();
 
-
+        calc.dividir();
+        calc.multiplicar();
+        calc.somar();
+        calc.subtrair();
+        */
         //=================================================================================================================================
         // EX 9 - Crie uma interface Imprimivel com o método imprimir(), implemente-a nas classes Documento e Imagem.  
         //=================================================================================================================================
+        /*
+        Imprimivel doc = new Documento();
+        Imprimivel img = new Imagem();
 
-
+        doc.imprimir();
+        img.imprimir();
+        */
         //=================================================================================================================================
         // EX 10 - Crie uma interface Animal com o método comer(), e uma outra interface Voador com o método voar(), e implemente ambas na classe Passaro. 
         //=================================================================================================================================
+        /*
+        Passaro  bird1 = new Passaro("Pomba");
+        Passaro bird2 = new Passaro("Águia");
+        Passaro bird3 = new Passaro("Urubu");
 
-
+        bird1.comer();
+        bird2.comer();
+        bird2.voar();
+        bird3.voar();
+        */
         //=================================================================================================================================
         // EX 11 - Crie uma interface Jogavel com o método iniciarJogo(), e implemente-a nas classes Xadrez e Futebol. 
         //=================================================================================================================================
