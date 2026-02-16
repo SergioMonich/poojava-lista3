@@ -72,14 +72,13 @@ public class App {
         //=================================================================================================================================
         // EX 5 - Crie uma interface Funcionario com o método calcularSalario() e implemente-a nas classes Gerente e Programador. 
         //=================================================================================================================================
-
+        /*
         Funcionario ger1 = new Gerente();
         Funcionario pro1 = new Programador();
 
         ger1.calcularSalario();
         pro1.calcularSalario();
-
-
+        */
         //=================================================================================================================================
         // EX 6 - Crie uma interface Nadador e Corredor, implemente ambas na classe Triatleta. 
         //=================================================================================================================================
