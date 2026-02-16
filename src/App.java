@@ -24,26 +24,60 @@ public class App {
         //=================================================================================================================================
         // EX 1 - Crie uma interface Veiculo com o método acelerar() e implemente-a nas classes Carro e Moto. 
         //=================================================================================================================================
-
-
+        /*
+        Veiculo car1 = new Carro();
+        Veiculo bike1 = new Moto();
+        
+        car1.acelerar();
+        bike1.acelerar();
+        */
         //=================================================================================================================================
         // EX 2 - Crie uma interface InstrumentoMusical com o método tocar() e implemente-a nas classes Violao e Piano. 
         //=================================================================================================================================
+        /*
+        InstrumentoMusical guitar1 = new Violao();
+        InstrumentoMusical piano1 = new Piano();
 
-
+        guitar1.tocar();
+        piano1.tocar();
+        */
         //=================================================================================================================================
         // EX 3 - Crie uma interface Eletrodomestico com os métodos ligar() e desligar(), e implemente-a nas classes Geladeira e Televisao. 
         //=================================================================================================================================
+        /*
+        Eletrodomestico fridge1 = new Geladeira("Consul CRM44AK");
+        Eletrodomestico fridge2 = new Geladeira("Brastemp BRM44H");
+        Eletrodomestico tv1 = new Televisao("Samsung UN32T4300GXZD");
+        Eletrodomestico tv2 = new Televisao("TCL QLED Full HD 32");
 
-
+        fridge1.ligar();
+        fridge2.desligar();
+        tv1.desligar();
+        tv2.ligar();
+        */
         //=================================================================================================================================
         // EX 4 - Crie uma interface FormaGeometrica com o método calcularArea() e implemente-a nas classes Quadrado e Circulo. 
         //=================================================================================================================================
+        /*
+        FormaGeometrica square1 = new Quadrado(15);
+        FormaGeometrica square2 = new Quadrado(10);
+        FormaGeometrica circle1 = new Circulo(20);
+        FormaGeometrica circle2 = new Circulo(25);
 
-
+        square1.calcularArea();
+        square2.calcularArea();
+        circle1.calcularArea();
+        circle2.calcularArea();
+        */
         //=================================================================================================================================
         // EX 5 - Crie uma interface Funcionario com o método calcularSalario() e implemente-a nas classes Gerente e Programador. 
         //=================================================================================================================================
+
+        Funcionario ger1 = new Gerente();
+        Funcionario pro1 = new Programador();
+
+        ger1.calcularSalario();
+        pro1.calcularSalario();
 
 
         //=================================================================================================================================
