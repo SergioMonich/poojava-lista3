@@ -8,21 +8,21 @@
 
 
 //=================================================================================================================================
-// EX 10 - Crie uma interface Animal com o método comer(), e uma outra interface Voador com o método voar(), e implemente ambas na classe Passaro. 
+// EX 12 - Crie uma interface Pagamento com o método pagar(), e implemente-a nas classes CartaoCredito e Boleto. 
 //=================================================================================================================================
 
 
 //=================================================================================================================================
-// EX 16 - Modifique a interface Animal adicionando um método default chamado dormir() que imprime "Zzz...", e implemente-a na classe Cachorro. 
+// EX 18 - Modifique a interface Pagamento adicionando um método default chamado cancelarPagamento() e implemente-a nas classes CartaoCredito e Pix. 
 //=================================================================================================================================
 
 
-public interface Animal {
+public interface Pagamento {
 
-    public void comer();
-    default void dormir() {
+    public void pagar();
+    default void cancelarPagamento() {
 
-        System.out.println("Zzz...");
+        System.out.printf("Cancelando cobrança\n");
 
     }
 

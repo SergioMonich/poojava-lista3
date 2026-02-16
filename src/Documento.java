@@ -12,6 +12,11 @@
 //=================================================================================================================================
 
 
+//=================================================================================================================================
+// EX 17 - Modifique a interface Imprimivel adicionando um método default chamado mostrarNoMonitor(), que imprime "Exibindo no monitor", e implemente-a na classDocumento. 
+//=================================================================================================================================
+
+
 public class Documento implements Imprimivel {
 
     @Override
@@ -19,6 +24,13 @@ public class Documento implements Imprimivel {
         
         System.out.println("Imprimindo DOCUMENTO");
         
+    }
+
+    @Override
+    public void mostrarNoMonitor() {
+        
+        Imprimivel.super.mostrarNoMonitor();
+
     }
 
 }

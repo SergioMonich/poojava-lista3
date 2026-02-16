@@ -49,11 +49,18 @@ public class App {
         Eletrodomestico fridge2 = new Geladeira("Brastemp BRM44H");
         Eletrodomestico tv1 = new Televisao("Samsung UN32T4300GXZD");
         Eletrodomestico tv2 = new Televisao("TCL QLED Full HD 32");
+        Televisao tv3 = new Televisao(null);
+        Televisao tv4 = new Televisao(null);
+        Microondas mic1 = new Microondas();
+        
 
         fridge1.ligar();
         fridge2.desligar();
         tv1.desligar();
         tv2.ligar();
+        tv3.aumentarVolume();
+        tv4.diminuirVolume();
+        mic1.verificarEstado();
         */
         //=================================================================================================================================
         // EX 4 - Crie uma interface FormaGeometrica com o método calcularArea() e implemente-a nas classes Quadrado e Circulo. 
@@ -104,11 +111,13 @@ public class App {
         //=================================================================================================================================
         /*
         Calculadora calc = new Calculadora();
+        CalculadoraCientifica calcc1 = new CalculadoraCientifica();
 
         calc.dividir();
         calc.multiplicar();
         calc.somar();
         calc.subtrair();
+        calcc1.potencia();
         */
         //=================================================================================================================================
         // EX 9 - Crie uma interface Imprimivel com o método imprimir(), implemente-a nas classes Documento e Imagem.  
@@ -116,9 +125,11 @@ public class App {
         /*
         Imprimivel doc = new Documento();
         Imprimivel img = new Imagem();
+        Documento doc2 = new Documento();
 
         doc.imprimir();
         img.imprimir();
+        doc2.mostrarNoMonitor();
         */
         //=================================================================================================================================
         // EX 10 - Crie uma interface Animal com o método comer(), e uma outra interface Voador com o método voar(), e implemente ambas na classe Passaro. 
@@ -127,7 +138,9 @@ public class App {
         Passaro  bird1 = new Passaro("Pomba");
         Passaro bird2 = new Passaro("Águia");
         Passaro bird3 = new Passaro("Urubu");
+        Cachorro dog1 = new Cachorro(null);
 
+        dog1.dormir();
         bird1.comer();
         bird2.comer();
         bird2.voar();
@@ -136,53 +149,88 @@ public class App {
         //=================================================================================================================================
         // EX 11 - Crie uma interface Jogavel com o método iniciarJogo(), e implemente-a nas classes Xadrez e Futebol. 
         //=================================================================================================================================
+        /*
+        Xadrex xadrez = new Xadrex();
+        Futebol futebol = new Futebol();
 
-
+        xadrez.iniciarJogo();
+        futebol.iniciarJogo();
+        */
         //=================================================================================================================================
         // EX 12 - Crie uma interface Pagamento com o método pagar(), e implemente-a nas classes CartaoCredito e Boleto. 
         //=================================================================================================================================
+        /*
+        CartaoCredito cc1 = new CartaoCredito(986532);
+        Boleto blt1 = new Boleto(124578);
+        CartaoCredito cc2 = new CartaoCredito(0);
+        Pix pix1 = new Pix();
 
-
+        cc1.pagar();
+        blt1.pagar();
+        cc2.cancelarPagamento();
+        pix1.pagar();
+        pix1.cancelarPagamento();
+        */
         //=================================================================================================================================
         // EX 13 - Crie uma interface Armazenavel com os métodos salvar() e carregar(), e implemente-a nas classes ArquivoTexto e BancoDeDados.
         //=================================================================================================================================
+        /*
+        ArquivoTexto txt1 = new ArquivoTexto();
+        ArquivoTexto txt2 = new ArquivoTexto();
+        BancoDeDados bdd1 = new BancoDeDados();
+        BancoDeDados bdd2 = new BancoDeDados();
 
-
+        txt1.carregar();
+        txt2.salvar();
+        bdd1.carregar();
+        bdd2.salvar();
+        */
         //=================================================================================================================================
         // EX 14 - Crie uma interface Sensores com o método medirTemperatura(), implemente-a nas classes SensorDeTemperatura e SensorDePressao. 
         //=================================================================================================================================
+        /*
+        SensorDePressao sdp1 = new SensorDePressao();
+        SensorDeTemperatura sdt1 = new SensorDeTemperatura();
 
-
+        sdp1.medirTemperatura();
+        sdt1.medirTemperatura();
+        */
         //=================================================================================================================================
         // EX 15 - Crie uma interface ControleRemoto com os métodos aumentarVolume() e diminuirVolume(), implemente-a na classe Televisao.
         //=================================================================================================================================
-
-
+        /*
+        Veja ex 3
+        */
         //=================================================================================================================================
         // EX 16 - Modifique a interface Animal adicionando um método default chamado dormir() que imprime "Zzz...", e implemente-a na classe Cachorro. 
         //=================================================================================================================================
-
-
+        /*
+        Veja ex 10
+        */
         //=================================================================================================================================
         // EX 17 - Modifique a interface Imprimivel adicionando um método default chamado mostrarNoMonitor(), que imprime "Exibindo no monitor", e implemente-a na classe Documento. 
         //=================================================================================================================================
-
-
+        /*
+        Veja ex 9
+        */
         //=================================================================================================================================
         // EX 18 - Modifique a interface Pagamento adicionando um método default chamado cancelarPagamento() e implemente-a nas classes CartaoCredito e Pix. 
         //=================================================================================================================================
-
-
+        /*
+        Veja ex 12
+        */
         //=================================================================================================================================
         // EX 19 - Modifique a interface OperacoesMatematicas adicionando um método default chamado potencia() e implemente-a na classe CalculadoraCientifica. 
         //=================================================================================================================================
-
-
+        /*
+        Veja ex 8
+        */
         //=================================================================================================================================
         // EX 20 - Modifique a interface Eletrodomestico adicionando um método default chamado verificarEstado() e implemente-a na classe Microondas. 
         //=================================================================================================================================
-
-
+        /*
+        Veja ex 3
+        */
         //=================================================================================================================================
         // EX 21 - Crie uma interface Conversor que converte Celsius para Fahrenheit e implemente-a na classe Temperatura. 
         //=================================================================================================================================

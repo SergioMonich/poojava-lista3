@@ -11,8 +11,12 @@
 // EX 3 - Crie uma interface Eletrodomestico com os métodos ligar() e desligar(), e implemente-a nas classes Geladeira e Televisao. 
 //=================================================================================================================================
 
+//=================================================================================================================================
+// EX 15 - Crie uma interface ControleRemoto com os métodos aumentarVolume() e diminuirVolume(), implemente-a na classe Televisao.
+//=================================================================================================================================
 
-public class Televisao implements Eletrodomestico {
+
+public class Televisao implements Eletrodomestico, ControleRemoto {
     
     private String modelo;
 
@@ -33,6 +37,20 @@ public class Televisao implements Eletrodomestico {
     public void ligar() {
         
         System.out.println("A TELEVISÃO " + modelo + " está ligando...");
+        
+    }
+
+    @Override
+    public void aumentarVolume() {
+        
+        System.out.println("Volume +...");
+        
+    }
+
+    @Override
+    public void diminuirVolume() {
+        
+        System.out.println("Volume -...");
         
     }
 

@@ -12,11 +12,21 @@
 //=================================================================================================================================
 
 
+//=================================================================================================================================
+// EX 19 - Modifique a interface OperacoesMatematicas adicionando um método default chamado potencia() e implemente-a na classe CalculadoraCientifica. 
+//=================================================================================================================================
+
+
 public interface OperacoesMatematicas {
 
     public void somar();
     public void subtrair();
     public void multiplicar();
     public void dividir();
+    default void potencia() {
+
+        System.out.println("Calculadora Científica está realizando POTENCIAÇÃO");
+
+    }
 
 }

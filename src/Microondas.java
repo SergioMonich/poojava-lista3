@@ -8,23 +8,30 @@
 
 
 //=================================================================================================================================
-// EX 3 - Crie uma interface Eletrodomestico com os métodos ligar() e desligar(), e implemente-a nas classes Geladeira e Televisao. 
-//=================================================================================================================================
-
-
-//=================================================================================================================================
 // EX 20 - Modifique a interface Eletrodomestico adicionando um método default chamado verificarEstado() e implemente-a na classe Microondas. 
 //=================================================================================================================================
 
 
-public interface Eletrodomestico {
+public class Microondas implements Eletrodomestico {
 
-    public void ligar();
-    public void desligar();
-    default void verificarEstado() {
+    @Override
+    public void desligar() {
+        
+        System.out.println("O MICROONDAS está desligando...");
+        
+    }
 
-        System.out.println("Verificando estado, aguarde...");
+    @Override
+    public void ligar() {
+        
+        System.out.println("O MICROONDAS está ligando...");
+        
+    }
 
+    @Override
+    public void verificarEstado() {
+        
+        Eletrodomestico.super.verificarEstado();
     }
 
 }
