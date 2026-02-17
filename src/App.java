@@ -101,10 +101,12 @@ public class App {
         ContaCorrente cc1 = new ContaCorrente(1234);
         ContaCorrente cc2 = new ContaCorrente(5678);
         ContaCorrente cc3 = new ContaCorrente(6543);
+        ContaPoupanca cp1 = new ContaPoupanca(1000);
 
         cc1.depositar();
         cc2.sacar();
         cc3.verSaldo();
+        cp1.taxaJurosAtual();
         */
         //=================================================================================================================================
         // EX 8 - Crie uma interface OperacoesMatematicas com os métodos somar(), subtrair(), multiplicar() e dividir(), e implemente-a na classe Calculadora. 
@@ -246,47 +248,88 @@ public class App {
         //=================================================================================================================================
         // EX 22 - Crie uma interface Banco que retorna a taxa de juros atual e implemente-a na classe ContaPoupanca. 
         //=================================================================================================================================
-
-
+        /*
+        Veja ex 7
+        */
         //=================================================================================================================================
         // EX 23 - Crie uma interface Utilitario que calcula o fatorial de um número e implemente-a na classe Matematica. 
         //=================================================================================================================================
+        /*
+        Matematica mat1 = new Matematica();
+        Matematica mat2 = new Matematica();
+        Matematica mat3 = new Matematica();
 
-
+        mat1.calcularFatorial(5);
+        mat2.calcularFatorial(10);
+        mat3.calcularFatorial(15);
+        */
         //=================================================================================================================================
         // EX 24 - Crie uma interface Mensagem que retorna "Bem-vindo ao sistema!" e implemente-a na classe Usuario. 
         //=================================================================================================================================
-
-
+        /*
+        Usuario user1 = new Usuario("Sérgio", "sergio@monich.com");
+        user1.exibirMensagem();
+        */
         //=================================================================================================================================
         // EX 25 - Crie uma interface Horario que retorna a hora atual e implemente-a na classe Relogio. 
         //=================================================================================================================================
-
-
+        /*
+        Relogio rel1 = new Relogio();
+        rel1.exibirHorario();
+        */
         //=================================================================================================================================
         // EX 26 - Crie uma interface Transmissivel com os métodos iniciarTransmissao() e finalizarTransmissao(), e implemente-a nas classes Youtube e Twitch. 
         //=================================================================================================================================
+        /*
+        YouTube yt1 = new YouTube();
+        Twitch tw1 = new Twitch();
 
-
+        yt1.iniciarTransmissao();
+        yt1.finalizarTransmissao();
+        tw1.iniciarTransmissao();
+        tw1.finalizarTransmissao();
+        */
         //=================================================================================================================================
-        // EX 27 - CrCrie uma interface Autenticavel com os métodos login() e logout(), implemente-a nas classes UsuarioSistema e Administrador. 
+        // EX 27 - Crie uma interface Autenticavel com os métodos login() e logout(), implemente-a nas classes UsuarioSistema e Administrador. 
         //=================================================================================================================================
+        /*
+        UsuarioSistema user1 = new UsuarioSistema("Sérgio", "sergio@monich.com");
+        user1.login();
+        user1.logout();
 
-
+        Administrador admin1 = new Administrador("Admin", "admin@monich.com");
+        admin1.login();
+        admin1.logout();
+        */
         //=================================================================================================================================
-        // EX 28 - Crie uma interface Movivel com os métodos moverParaFrente() e moverParaTras(), implementea na classe Robo. 
+        // EX 28 - Crie uma interface Movivel com os métodos moverParaFrente() e moverParaTras(), implemente-a na classe Robo. 
         //=================================================================================================================================
+        /*
+        Robo robo1 = new Robo();
+        Robo robo2 = new Robo();
 
-
+        robo1.moverParaFrente();
+        robo1.moverParaTras();
+        robo2.moverParaFrente();
+        robo2.moverParaTras();
+        */
         //=================================================================================================================================
         // EX 29 - Crie uma interface Repositorio<T> com os métodos salvar(T objeto) e buscar(int id), implemente-a na classe RepositorioCliente. 
         //=================================================================================================================================
-
-
+        /*
+        *NÃO ENTENDI ESSE EXERCÍCIO ENTÃO FIZ A ESTRUTURA DA INTERFACE E DA CLASSE QUE IMPLEMENTA, MAS NÃO CONSEGUI PREENCHER OS MÉTODOS.
+        */
         //=================================================================================================================================
         // EX 30 - Crie uma interface Musica com os métodos play(), pause(), stop(), e implemente-a nas classes Spotify e Deezer. 
         //=================================================================================================================================
+        /*
+        Spotify spotify1 = new Spotify();
+        Spotify spotify2 = new Spotify();
+        Deezer deezer1 = new Deezer();
 
-
+        spotify1.play();
+        spotify2.pause();
+        deezer1.stop();
+        */
     }
 }
